@@ -28,6 +28,24 @@ class AppHome extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {  },
       child: const Icon(Icons.add_shopping_cart),),
+
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: ListView(
+          children: [
+            const Text("Heading"),
+            const Text("Sub-Heading"),
+            const Text("Paragraph"),
+            ElevatedButton(onPressed: () {  },child: const Text("Elevated Button"),),
+            OutlinedButton(onPressed: () {  },child: const Text("Outlined Button"),),
+
+            const Padding(padding: EdgeInsets.all(20.0),
+            child: Image(image: AssetImage("assets/images/book.png")),
+            )
+          ],
+        ),
+
+      ),
     );
   }
 }
